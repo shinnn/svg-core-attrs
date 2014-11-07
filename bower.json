@@ -1,0 +1,39 @@
+{
+  "name": "svg-core-attrs",
+  "description": "Array of the SVG core attributes",
+  "keywords": [
+    "w3c",
+    "svg",
+    "xml",
+    "value",
+    "attribute",
+    "array",
+    "common",
+    "core",
+    "id",
+    "base",
+    "lang",
+    "space"
+  ],
+  "main": "./svg-core-attrs.js",
+  "homepage": "https://github.com/shinnn/svg-core-attrs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/svg-core-attrs.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "svg-core-attrs-cjs.js",
+    "test.js",
+    "package.json",
+    "component.json"
+  ]
+}
