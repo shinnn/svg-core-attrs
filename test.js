@@ -1,23 +1,19 @@
-/*!
- * svg-core-attrs | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/svg-core-attrs
-*/
 'use strict';
 
-var test = require('tape');
+const test = require('tape');
 
-var spec = 'should be equivalent of the expected value.';
-var expected = ['id', 'xml:base', 'xml:lang', 'xml:space'];
+const spec = 'should be equivalent of the expected value.';
+const expected = ['id', 'xml:base', 'xml:lang', 'xml:space'];
 
-test('require(\'svg-core-attrs\')', function(t) {
+test('require(\'svg-core-attrs\')', t => {
   t.plan(1);
   t.deepEqual(require('./'), expected, spec);
 });
 
-test('window.svgCoreAttrs', function(t) {
+test('window.svgCoreAttrs', t => {
   t.plan(1);
 
   global.window = {};
-  require(require('./bower.json').main);
+  require('./' + require('./bower.json').main);
   t.deepEqual(window.svgCoreAttrs, expected, spec);
 });

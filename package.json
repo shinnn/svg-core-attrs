@@ -8,10 +8,8 @@
     "svg-core-attrs-cjs.js"
   ],
   "scripts": {
-    "test": "node test.js",
-    "coverage": "istanbul cover test.js",
-    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
     "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js test.js",
+    "test": "node --harmony_arrow_functions test.js"
   },
   "keywords": [
     "w3c",
