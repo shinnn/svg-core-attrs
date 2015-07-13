@@ -4,6 +4,7 @@
   "description": "Array of the SVG core attributes",
   "repository": "shinnn/svg-core-attrs",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "license": "Unlicense",
   "files": [
     "svg-core-attrs-cjs.js"
   ],
