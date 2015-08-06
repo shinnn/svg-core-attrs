@@ -1,4 +1,4 @@
-'use strict';
+'use strong';
 
 const test = require('tape');
 
@@ -15,5 +15,5 @@ test('window.svgCoreAttrs', t => {
 
   global.window = {};
   require('./' + require('./bower.json').main);
-  t.deepEqual(window.svgCoreAttrs, expected, spec);
+  t.deepEqual(global.window.svgCoreAttrs, expected, spec);
 });

@@ -9,8 +9,8 @@
     "index.json"
   ],
   "scripts": {
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js test.js",
-    "test": "node --harmony_arrow_functions test.js"
+    "pretest": "eslint --config @shinnn/node browser.js --global window test.js",
+    "test": "node --strong_mode test.js"
   },
   "keywords": [
     "w3c",
@@ -29,8 +29,8 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.24.1",
-    "tape": "^4.0.0"
+    "@shinnn/eslint-config-node": "^1.0.1",
+    "eslint": "^1.4.3",
+    "tape": "^4.2.0"
   }
 }
