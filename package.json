@@ -29,8 +29,8 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^1.0.1",
-    "eslint": "^1.4.3",
-    "tape": "^4.2.0"
+    "@shinnn/eslint-config-node": "^2.0.0",
+    "eslint": "^2.9.0",
+    "tape": "^4.5.1"
   }
 }
